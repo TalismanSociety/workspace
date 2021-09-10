@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -xeuo pipefail
+
+# clone
+
+[[ -d "api" ]] || git clone git@github.com:TalismanSociety/api.git
+[[ -d "api-react-hooks" ]] || git clone git@github.com:TalismanSociety/api-react-hooks.git
+[[ -d "chaindata-js" ]] || git clone git@github.com:TalismanSociety/chaindata-js.git
+[[ -d "util" ]] || git clone git@github.com:TalismanSociety/util.git
+[[ -d "web" ]] || git clone git@github.com:TalismanSociety/talisman-web.git web

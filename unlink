@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -xeuo pipefail
+
+# unlink
+
+cd chaindata-js
+yarn unlink -A
+cd ..
+
+cd util
+yarn unlink -A
+cd ..
+
+cd api
+yarn unlink -A
+cd ..
+
+cd api-react-hooks
+yarn unlink -A
+cd ..
+
+cd web
+yarn unlink -A
+cd ..
+
+# echo
+
+set +x # stop printing commands and their arguments as they are executed.
+
+echo "linked packages:"
+find -maxdepth 4 -type l -wholename '*@talismn*' -exec bash -c 'echo -n "{} -> "; readlink {}' \;
