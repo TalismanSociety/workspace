@@ -5,6 +5,8 @@ set -xeuo pipefail
 
 cd chaindata-js
 yarn
+rm -rf dist
+yarn build:types
 cd ..
 
 cd util
@@ -16,6 +18,7 @@ cd ..
 cd api
 yarn
 yarn link -Ar ../chaindata-js
+yarn link -Ar ../util
 rm -rf dist
 yarn build:types
 cd ..
