@@ -34,6 +34,7 @@ cd ..
 
 cd web
 yarn
+yarn link -Ar ../chaindata-js
 yarn link -Ar ../api-react-hooks
 yarn link -Ar ../util
 cd ..
