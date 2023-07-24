@@ -1,3 +1,7 @@
+>
+> This repo has been deprecated in favour of the [talisman monorepo](https://github.com/talismansociety/talisman).
+>
+
 # Talisman Workspace 🔨
 
 <img src="1f9ff.svg" alt="Talisman" width="15%" align="right" />
